@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test mailer</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 28rem;
+        }
+
+        input {
+            margin-bottom: 1rem;
+        }
+
+        textarea {
+            margin-bottom: 1rem;
+        }
+
+        button {
+            line-height: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <form action="./mailer.php" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+        <label for="mensaje"></label>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
